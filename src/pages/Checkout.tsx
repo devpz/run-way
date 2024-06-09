@@ -22,7 +22,7 @@ const Checkout: React.FC = () => {
   );
 
   if (cartTotal === 0) {
-    return <SectionTitle text="Your cart is empty" />;
+    return <h2 className="text-2xl font-bold">Your cart is empty</h2>;
   }
 
   return (

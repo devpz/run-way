@@ -1,0 +1,93 @@
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { toast } from "react-toastify";
+
+interface Product {
+  cartID: string;
+  productID: string;
+  image: string;
+  title: string;
+  price: number;
+  company: string;
+  productColor: string;
+  amount: number;
+}
+
+interface CartState {
+  cartItems: Product[];
+  numItemsInCart: number;
+  cartTotal: number;
+  shipping: number;
+  tax: number;
+  orderTotal: number;
+}
+
+const defaultState: CartState = {
+  cartItems: [],
+  numItemsInCart: 0,
+  cartTotal: 0,
+  shipping: 500,
+  tax: 0,
+  orderTotal: 0,
+};
+
+const getCartFromLocalStorage = (): CartState => {
+  return JSON.parse(localStorage.getItem("cart") as string) || defaultState;
+};
+
+const cartSlice = createSlice({
+  name: "cart",
+  initialState: getCartFromLocalStorage(),
+  reducers: {
+    addItem: (state, action: PayloadAction<{ product: Product }>) => {
+      const { product } = action.payload;
+      const item = state.cartItems.find((i) => i.cartID === product.cartID);
+      if (item) {
+        item.amount += product.amount;
+      } else {
+        state.cartItems.push(product);
+      }
+
+      state.numItemsInCart += product.amount;
+      state.cartTotal += product.price * product.amount;
+      cartSlice.caseReducers.calculateTotals(state);
+      toast.success("Item added to cart");
+    },
+    clearCart: (state) => {
+      localStorage.setItem("cart", JSON.stringify(defaultState));
+      return defaultState;
+    },
+    removeItem: (state, action: PayloadAction<{ cartID: string }>) => {
+      const { cartID } = action.payload;
+      const product = state.cartItems.find((i) => i.cartID === cartID);
+      state.cartItems = state.cartItems.filter((i) => i.cartID !== cartID);
+      if (product) {
+        state.numItemsInCart -= product.amount;
+        state.cartTotal -= product.price * product.amount;
+      }
+      cartSlice.caseReducers.calculateTotals(state);
+      toast.error("Item removed from cart");
+    },
+    editItem: (
+      state,
+      action: PayloadAction<{ cartID: string; amount: number }>
+    ) => {
+      const { cartID, amount } = action.payload;
+      const item = state.cartItems.find((i) => i.cartID === cartID);
+      if (item) {
+        state.numItemsInCart += amount - item.amount;
+        state.cartTotal += item.price * (amount - item.amount);
+        item.amount = amount;
+      }
+      cartSlice.caseReducers.calculateTotals(state);
+      toast.success("Cart updated");
+    },
+    calculateTotals: (state) => {
+      state.orderTotal = state.cartTotal;
+      localStorage.setItem("cart", JSON.stringify(state));
+    },
+  },
+});
+
+export const { addItem, clearCart, removeItem, editItem } = cartSlice.actions;
+
+export default cartSlice.reducer;

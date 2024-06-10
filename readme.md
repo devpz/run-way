@@ -42,8 +42,8 @@ Dark mode:
 
 Mobile:
 
-| ![img](https://pawelzaleski.com/wp-content/uploads/2024/06/IMG_3517-2-472x1024.png) | ![img](https://pawelzaleski.com/wp-content/uploads/2024/06/IMG_3513-1-472x1024.png) | ![](https://pawelzaleski.com/wp-content/uploads/2024/06/IMG_200BBFA63E9E-1-2-472x1024.jpeg) |
+| ![img](https://pawelzaleski.com/wp-content/uploads/2024/06/IMG_3517-2-472x1024.png) | ![](https://pawelzaleski.com/wp-content/uploads/2024/06/IMG_3519-472x1024.png)      | ![](https://pawelzaleski.com/wp-content/uploads/2024/06/IMG_200BBFA63E9E-1-2-472x1024.jpeg) |
 | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| ![](https://pawelzaleski.com/wp-content/uploads/2024/06/IMG_3516-2-472x1024.png)    | ![](https://pawelzaleski.com/wp-content/uploads/2024/06/IMG_3519-472x1024.png)      | ![](https://pawelzaleski.com/wp-content/uploads/2024/06/IMG_3514-2-472x1024.png)            |
+| ![](https://pawelzaleski.com/wp-content/uploads/2024/06/IMG_3516-2-472x1024.png)    | ![img](https://pawelzaleski.com/wp-content/uploads/2024/06/IMG_3513-1-472x1024.png) | ![](https://pawelzaleski.com/wp-content/uploads/2024/06/IMG_3514-2-472x1024.png)            |
 
 **Note: **This is demo application. All products and images shown on the application is to demonstrate my skills. Not for sale.

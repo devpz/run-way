@@ -10,6 +10,8 @@ Application features Responsive Web Design to make sure it looks correctly on al
 
 **Try run-way [here](https://run-way-v2.netlify.app/).**
 
+Note: Sometimes server is running slow. In case of content not loading please wait 2-3 minutes.
+
 ## **Technologies used**
 
 Frontend: TypeScript with React

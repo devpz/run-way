@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { productionUrl } from "../config";
 
 const Hero: React.FC = () => {
+  const imageUrl = `${productionUrl}public/images/hero1.jpg`;
   return (
     <>
       <div className="relative overflow-hidden sm:overflow-hidden xl:overflow-visible">
@@ -32,7 +34,7 @@ const Hero: React.FC = () => {
                 >
                   <div className="absolute transform lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
                     <img
-                      src="https://run-way.onrender.com/api/public/images/hero1.jpg"
+                      src={imageUrl}
                       alt="Product screenshot"
                       className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
                       width={2432}

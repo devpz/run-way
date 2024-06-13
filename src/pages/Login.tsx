@@ -5,6 +5,7 @@ import { customFetch } from "../utils";
 import { toast } from "react-toastify";
 import { loginUser } from "../features/user/userSlice";
 import { Store } from "@reduxjs/toolkit";
+import { productionUrl } from "../config";
 
 interface LoginFormData {
   identifier: string;
@@ -32,7 +33,7 @@ export const action =
   };
 
 const Login: React.FC = () => {
-  const src = "https://run-way.onrender.com/api/public/images/logo.png";
+  const src = `${productionUrl}public/images/logo.png`;
   return (
     <section className="h-screen grid place-items-center">
       <Form

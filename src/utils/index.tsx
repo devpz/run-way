@@ -1,6 +1,6 @@
 import axios from "axios";
+import { productionUrl } from "../config";
 
-const productionUrl = "https://run-way.onrender.com/api/";
 
 export const customFetch = axios.create({
   baseURL: productionUrl,

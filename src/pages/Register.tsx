@@ -3,6 +3,7 @@ import { FormInput, SubmitBtn } from "../components";
 import { Form, Link, redirect, ActionFunctionArgs } from "react-router-dom";
 import { customFetch } from "../utils";
 import { toast } from "react-toastify";
+import { productionUrl } from "../config";
 
 interface RegisterFormData {
   username: string;
@@ -27,7 +28,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
   }
 };
 
-const src = "https://run-way.onrender.com/api/public/images/logo.png";
+const src = `${productionUrl}public/images/logo.png`;
 
 const Register: React.FC = () => {
   return (

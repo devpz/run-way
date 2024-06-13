@@ -1,4 +1,7 @@
+const { productionUrl } = require('./config');
+
 const products = {
+
   "data": [
     {
       "id": 1,
@@ -11,7 +14,7 @@ const products = {
         "updatedAt": "2024-06-06T10:16:43.298Z",
         "publishedAt": "2024-06-06T10:07:44.157Z",
         "category": "Asphalt",
-        "image": "https://run-way.onrender.com/api/public/images/pegasus40.jpg",
+        "image": `${productionUrl}public/images/pegasus40.jpg`,
         "price": "11699",
         "shipping": true,
         "colors": [
@@ -30,7 +33,7 @@ const products = {
         "updatedAt": "2024-06-06T09:33:03.728Z",
         "publishedAt": "2024-06-06T09:33:03.598Z",
         "category": "Asphalt",
-        "image": "https://run-way.onrender.com/api/public/images/novablast4.jpg",
+        "image": `${productionUrl}public/images/novablast4.jpg`,
         "price": "14000",
         "shipping": true,
         "colors": [
@@ -49,7 +52,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Trail",
-        "image": "https://run-way.onrender.com/api/public/images/hokaChallenger7.jpg",
+        "image": `${productionUrl}public/images/hokaChallenger7.jpg`,
         "price": "14500",
         "shipping": true,
         "colors": [
@@ -69,7 +72,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Road",
-        "image": "https://run-way.onrender.com/api/public/images/gel-kyano30.jpg",
+        "image": `${productionUrl}public/images/gel-kyano30.jpg`,
         "price": "16500",
         "shipping": true,
         "colors": [
@@ -88,7 +91,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Road",
-        "image": "https://run-way.onrender.com/api/public/images/inov-8.jpg",
+        "image": `${productionUrl}public/images/inov-8.jpg`,
         "price": "13000",
         "shipping": true,
         "colors": [
@@ -107,7 +110,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Asphalt",
-        "image": "https://run-way.onrender.com/api/public/images/adizeroTakumiSen10.jpg",
+        "image": `${productionUrl}public/images/adizeroTakumiSen10.jpg`,
         "price": "16000",
         "shipping": true,
         "colors": [
@@ -126,7 +129,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Asphalt",
-        "image": "https://run-way.onrender.com/api/public/images/supernovaRiseM.jpg",
+        "image": `${productionUrl}public/images/supernovaRiseM.jpg`,
         "price": "16000",
         "shipping": true,
         "colors": [
@@ -145,7 +148,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Asphalt",
-        "image": "https://run-way.onrender.com/api/public/images/gelCumulus26m.jpg",
+        "image": `${productionUrl}public/images/gelCumulus26m.jpg`,
         "price": "16000",
         "shipping": true,
         "colors": [
@@ -164,7 +167,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Asphalt",
-        "image": "https://run-way.onrender.com/api/public/images/waveInspire20.jpg",
+        "image": `${productionUrl}public/images/waveInspire20.jpg`,
         "price": "16000",
         "shipping": true,
         "colors": [
@@ -183,7 +186,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Asphalt",
-        "image": "https://run-way.onrender.com/api/public/images/adizeroAdiosPro3.jpg",
+        "image": `${productionUrl}public/images/adizeroAdiosPro3.jpg`,
         "price": "16000",
         "shipping": true,
         "colors": [
@@ -202,7 +205,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Asphalt",
-        "image": "https://run-way.onrender.com/api/public/images/vomero17.jpg",
+        "image": `${productionUrl}public/images/vomero17.jpg`,
         "price": "19900",
         "shipping": true,
         "colors": [
@@ -221,7 +224,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Asphalt",
-        "image": "https://run-way.onrender.com/api/public/images/hyperion.jpg",
+        "image": `${productionUrl}public/images/hyperion.jpg`,
         "price": "24900",
         "shipping": true,
         "colors": [
@@ -240,7 +243,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Asphalt",
-        "image": "https://run-way.onrender.com/api/public/images/kinvara14.jpg",
+        "image": `${productionUrl}public/images/kinvara14.jpg`,
         "price": "18900",
         "shipping": true,
         "colors": [
@@ -259,7 +262,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Asphalt",
-        "image": "https://run-way.onrender.com/api/public/images/ultraboostLight.jpg",
+        "image": `${productionUrl}public/images/ultraboostLight.jpg`,
         "price": "14099",
         "shipping": true,
         "colors": [
@@ -278,7 +281,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Asphalt",
-        "image": "https://run-way.onrender.com/api/public/images/cloudmonsterHyperM.jpg",
+        "image": `${productionUrl}public/images/cloudmonsterHyperM.jpg`,
         "price": "21799",
         "shipping": true,
         "colors": [
@@ -297,7 +300,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Asphalt",
-        "image": "https://run-way.onrender.com/api/public/images/waveSkyrise5.jpg",
+        "image": `${productionUrl}public/images/waveSkyrise5.jpg`,
         "price": "12499",
         "shipping": true,
         "colors": [
@@ -316,7 +319,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Track",
-        "image": "https://run-way.onrender.com/api/public/images/zoomx-dragonfly-2.jpg",
+        "image": `${productionUrl}public/images/zoomx-dragonfly-2.jpg`,
         "price": "16000",
         "shipping": true,
         "colors": [
@@ -335,7 +338,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Track",
-        "image": "https://run-way.onrender.com/api/public/images/adidasAdizeroTJ.jpg",
+        "image": `${productionUrl}public/images/adidasAdizeroTJ.jpg`,
         "price": "16900",
         "shipping": true,
         "colors": [
@@ -354,7 +357,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Track",
-        "image": "https://run-way.onrender.com/api/public/images/hypersprint8.jpg",
+        "image": `${productionUrl}public/images/hypersprint8.jpg`,
         "price": "12900",
         "shipping": true,
         "colors": [
@@ -373,7 +376,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Speed",
-        "image": "https://run-way.onrender.com/api/public/images/triumph21.jpg",
+        "image": `${productionUrl}public/images/triumph21.jpg`,
         "price": "17000",
         "shipping": true,
         "colors": [
@@ -392,7 +395,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Speed",
-        "image": "https://run-way.onrender.com/api/public/images/magicSpeed3.jpg",
+        "image": `${productionUrl}public/images/magicSpeed3.jpg`,
         "price": "16799",
         "shipping": true,
         "colors": [
@@ -411,7 +414,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Speed",
-        "image": "https://run-way.onrender.com/api/public/images/duramoSpeed.jpg",
+        "image": `${productionUrl}public/images/duramoSpeed.jpg`,
         "price": "12990",
         "shipping": true,
         "colors": [
@@ -430,7 +433,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Long-Distance",
-        "image": "https://run-way.onrender.com/api/public/images/fly5.jpg",
+        "image": `${productionUrl}public/images/fly5.jpg`,
         "price": "18699",
         "shipping": true,
         "colors": [
@@ -449,7 +452,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Long-Distance",
-        "image": "https://run-way.onrender.com/api/public/images/next2.jpg",
+        "image": `${productionUrl}public/images/next2.jpg`,
         "price": "23900",
         "shipping": true,
         "colors": [
@@ -468,7 +471,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Long-Distance",
-        "image": "https://run-way.onrender.com/api/public/images/brooksGhostMax.jpg",
+        "image": `${productionUrl}public/images/brooksGhostMax.jpg`,
         "price": "17499",
         "shipping": true,
         "colors": [
@@ -487,7 +490,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Long-Distance",
-        "image": "https://run-way.onrender.com/api/public/images/fujiSpeed2.jpg",
+        "image": `${productionUrl}public/images/fujiSpeed2.jpg`,
         "price": "13699",
         "shipping": true,
         "colors": [
@@ -506,7 +509,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Trail",
-        "image": "https://run-way.onrender.com/api/public/images/waveDaichi7.jpg",
+        "image": `${productionUrl}public/images/waveDaichi7.jpg`,
         "price": "16900",
         "shipping": true,
         "colors": [
@@ -525,7 +528,7 @@ const products = {
         "updatedAt": "2024-06-06T14:35:16.880Z",
         "publishedAt": "2024-06-06T14:32:05.491Z",
         "category": "Trail",
-        "image": "https://run-way.onrender.com/api/public/images/terrexAgravic.jpg",
+        "image": `${productionUrl}public/images/terrexAgravic.jpg`,
         "price": "21799",
         "shipping": true,
         "colors": [
